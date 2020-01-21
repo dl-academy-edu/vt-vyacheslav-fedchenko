@@ -1,2 +1,6 @@
 # vt-vyacheslav-fedchenko
-Учебный репозиторий для студента Федченко Вячеслава
+
+# Личный проект "ДЗ №1"
+
+- Студент [Федченко Вячеслав](http://t.me/Vyacheslav_Fedchenko)
+- Наставник [Виталий Ткаченко](http://t.me/Vitalik_Tkachenko_tlt)
