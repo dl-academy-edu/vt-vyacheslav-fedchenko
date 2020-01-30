@@ -2,5 +2,5 @@
 
 # Личный проект "Design Life Kids"
 
-- Студент [Федченко Вячеслав](http://t.me/Vyacheslav_Fedchenko)
+- Студент [Вячеслав Федченко](http://t.me/Vyacheslav_Fedchenko)
 - Наставник [Виталий Ткаченко](http://t.me/Vitalik_Tkachenko_tlt)
