@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toys</title>
+</head>
+<body>
+  <header>
+    <a href="#"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
+    <nav class="header-nav">
+      <ul>
+        <li><a class="header-nav_item" href="#">Blog</a></li>
+        <li><a class="header-nav_item">Catalog</a></li>
+        <li><a class="header-nav_item" href="#">About Us</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a class="search-link" href="#"><img src="/images/search.svg" alt="search"/></a>
+        </li>
+        <li><a class="button header-button" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="products">Toy for kids</h1>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a href="/index.html" class="breadcrumbs-link">
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="/pages/catalog/index.html" class="breadcrumbs-link">
+            <span>Catalog</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <span>Toys</span>
+        </li>
+      </ul>
+    </div>
+      <form class="filter" name="select" method="get" action="">
+        <p>Cost</p>
+        <p>
+          <label class="form-label" for="form-cost"></label>
+          <input class="form-input" type="range" name="cost" id="form-cost" min="0" max="500" value="100">
+        </p>
+        <p>Color</p>
+        <p>
+          <label class="form-label" for="form-color">Black</label>
+          <input class="form-input" type="checkbox" name="color" id="form-color" value="Black" checked>
+          <label class="form-label" for="form-color">Blue</label>
+          <input class="form-input" type="checkbox" name="color" id="form-color" value="Blue">
+          <label class="form-label" for="form-color">Green</label>
+          <input class="form-input" type="checkbox" name="color" id="form-color" value="Green">
+          <label class="form-label" for="form-color">White</label>
+          <input class="form-input" type="checkbox" name="color" id="form-color" value="White">
+        </p>
+        <p>Delivery</p>
+        <p>
+          <label class="form-label" for="form-delivery">Free shipping</label>
+          <input class="form-input" type="radio" name="delivery" id="form-delivery" value="Free-shipping">
+          <label class="form-label" for="form-delivery">Fast shipping</label>
+          <input class="form-input" type="radio" name="delivery" id="form-delivery" value="Fast-shipping" checked>
+        </p>
+        <p>Amount</p>
+        <p>
+          <label class="form-label" for="form-amount"></label>
+          <input class="form-input" type="button" name="amount" id="form-amount" value="0-5" checked>
+          <label class="form-label" for="form-amount"></label>
+          <input class="form-input" type="button" name="amount" id="form-amount" value="10-20">
+          <label class="form-label" for="form-amount"></label>
+          <input class="form-input" type="button" name="amount" id="form-amount" value="20-50">
+        </p>
+        <button type="submit" class="button button-black">APPLY</button>
+      </form>
+    <div class="toy">
+      <ul class="toy-list">
+        <li class="toy-item">
+          <a href="#">
+            <img src="/images/toy1.jpg" alt="Selected toy" class="toy-img"/>
+            <span class="toy-title">SHARKY BEAN BAG CHAIR COVER</span>
+            <span class="toy-cost">$60.00 USD</span>
+          </a>
+        </li>
+        <li class="toy-item">
+          <a href="#">
+            <img src="/images/toy2.jpg" alt="Selected toy" class="toy-img"/>
+            <span class="toy-title">BRASS DECO FRAMES</span>
+            <span class="toy-cost">$66.00 USD</span>
+          </a>
+        </li>
+        <li class="toy-item">
+          <a href="#">
+            <img src="/images/toy3.jpg" alt="Selected toy" class="toy-img"/>
+            <span class="toy-title">CIBO FULL APRON</span>
+            <span class="toy-cost">$60.00 USD</span>
+          </a>
+        </li>
+        <li class="toy-item">
+          <a href="#">
+            <img src="/images/toy4.jpg" alt="Selected toy" class="toy-img"/>
+            <span class="toy-title">GATCHA GATCHA GUMBALL MACHINE</span>
+            <span class="toy-cost">$56.00 USD</span>
+          </a>
+        </li>
+        <li class="toy-item">
+          <a href="#">
+            <img src="/images/toy5.jpg" alt="Selected toy" class="toy-img"/>
+            <span class="toy-title">CHRISTMAS ADVENT SCENTED CANDLE</span>
+            <span class="toy-cost">$29.00 USD</span>
+          </a>
+        </li>
+        <li class="toy-item">
+          <a href="#">
+            <img src="/images/toy6.jpg" alt="Selected toy" class="toy-img"/>
+            <span class="toy-title">TANGLE SPINNING TEA LIGHT</span>
+            <span class="toy-cost">$56.00 USD</span>
+          </a>
+        </li>
+    </div>
+    <div class="selector">
+      <button class="selector-button button"><a href="#">1</a></button>
+      <button class="selector-button button"><a href="#">2</a></button>
+      <button class="selector-button button"><a href="#">3</a></button>
+      <button class="selector-button button"><a href="#">4</a></button>
+    </div>
+  </main>
+  <footer class="footer">
+    <section class="footer-nav">
+      <h4 class="footer-nav-title">Navigation</h4>
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item"><a href="#">About Us</a></li>
+        <li class="footer-nav-item"><a href="#">Blog</a></li>
+        <li class="footer-nav-item"><a href="#">Design Services</a></li>
+        <li class="footer-nav-item"><a href="#">Featured On</a></li>
+        <li class="footer-nav-item"><a href="#">2018 Holiday Catalog</a></li>
+        <li class="footer-nav-item"><a href="#">Shop By Designer</a></li>
+      </ul>
+    </section>
+    <section class="footer-customer-info">
+      <h4 class="footer-customer-info-title">Customer Information</h4>
+      <ul class="footer-customer-info-list">
+        <li class="customer-info-item"><a href="#">Contact Us</a></li>
+        <li class="customer-info-item"><a href="#">Sale Exclusions</a></li>
+        <li class="customer-info-item"><a href="#">Shipping & Returns</a></li>
+        <li class="customer-info-item"><a href="#">Terms & Conditions</a></li>
+        <li class="customer-info-item"><a href="#">Privacy Policy</a></li>
+        <li class="customer-info-item"><a href="#">Search</a></li>
+      </ul>
+    </section>
+    <section class="footer-connect">
+      <h4 class="footer-connect-title">Connect</h4>
+      <form action="#">
+      <input type="email" placeholder="Email"/>
+      <button type="submit">Join</button>
+      </form>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="#"><img src="/images/Facebook.svg" alt="Facebook logo" />Facebook</a>
+        </li>
+        <li class="social-item">
+          <a href="#"><img src="/images/Twitter.svg" alt="Twitter logo" />Twitter</a>
+        </li>
+        <li class="social-item">
+          <a href="#"><img src="/images/Pinterest.svg" alt="Pinterest logo" />Pinterest</a>
+        </li>
+        <li class="social-item">
+          <a href="#"><img src="/images/Instagram.svg" alt="Instagram logo" />Instagram</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-info">
+      <h2 class="hidden">Footer-info</h2>
+          <div>
+            <p>Company Rating</p>
+            <div>
+              <img src="/images/star.svg" alt="star" />
+              <img src="/images/star.svg" alt="star" />
+              <img src="/images/star.svg" alt="star" />
+              <img src="/images/star.svg" alt="star" />
+              <img src="/images/star.svg" alt="star" />
+            </div>
+          </div>
+          <p>Copyright © 2018 Dlk • Design Life Kids</p>
+          <a href="#">Web Design — Direct Line Development</a>
+    </section>
+  </footer>
+</body>
+</html>
