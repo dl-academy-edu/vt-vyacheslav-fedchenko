@@ -10,7 +10,7 @@
     <nav class="header-nav">
       <ul>
         <li><a class="header-nav_item" href="#">Blog</a></li>
-        <li><a class="header-nav_item">Catalog</a></li>
+        <li><a class="header-nav_item" href="/pages/catalog/index.html">Catalog</a></li>
         <li><a class="header-nav_item" href="#">About Us</a></li>
       </ul>
       <ul>
@@ -40,39 +40,39 @@
         </li>
       </ul>
     </div>
-      <form class="filter" name="select" method="get" action="">
-        <p>Cost</p>
-        <p>
+      <form class="filter" name="select" method="get">
+        <fieldset>
+          <legend>Cost</legend>
           <label class="form-label" for="form-cost"></label>
           <input class="form-input" type="range" name="cost" id="form-cost" min="0" max="500" value="100">
-        </p>
-        <p>Color</p>
-        <p>
-          <label class="form-label" for="form-color">Black</label>
-          <input class="form-input" type="checkbox" name="color" id="form-color" value="Black" checked>
-          <label class="form-label" for="form-color">Blue</label>
-          <input class="form-input" type="checkbox" name="color" id="form-color" value="Blue">
-          <label class="form-label" for="form-color">Green</label>
-          <input class="form-input" type="checkbox" name="color" id="form-color" value="Green">
-          <label class="form-label" for="form-color">White</label>
-          <input class="form-input" type="checkbox" name="color" id="form-color" value="White">
-        </p>
-        <p>Delivery</p>
-        <p>
-          <label class="form-label" for="form-delivery">Free shipping</label>
-          <input class="form-input" type="radio" name="delivery" id="form-delivery" value="Free-shipping">
-          <label class="form-label" for="form-delivery">Fast shipping</label>
-          <input class="form-input" type="radio" name="delivery" id="form-delivery" value="Fast-shipping" checked>
-        </p>
-        <p>Amount</p>
-        <p>
-          <label class="form-label" for="form-amount"></label>
-          <input class="form-input" type="button" name="amount" id="form-amount" value="0-5" checked>
-          <label class="form-label" for="form-amount"></label>
-          <input class="form-input" type="button" name="amount" id="form-amount" value="10-20">
-          <label class="form-label" for="form-amount"></label>
-          <input class="form-input" type="button" name="amount" id="form-amount" value="20-50">
-        </p>
+        </fieldset>
+        <fieldset>
+          <legend>Color</legend>
+          <label class="form-label" for="black-color">Black</label>
+          <input class="form-input" type="checkbox" name="color" id="black-color" value="Black" checked>
+          <label class="form-label" for="blue-color">Blue</label>
+          <input class="form-input" type="checkbox" name="color" id="blue-color" value="Blue">
+          <label class="form-label" for="green-color">Green</label>
+          <input class="form-input" type="checkbox" name="color" id="green-color" value="Green">
+          <label class="form-label" for="white-color">White</label>
+          <input class="form-input" type="checkbox" name="color" id="white-color" value="White">
+        </fieldset>
+        <fieldset>
+          <legend>Delivery</legend>
+          <label class="form-label" for="free-delivery">Free shipping</label>
+          <input class="form-input" type="radio" name="delivery" id="free-delivery" value="Free-shipping">
+          <label class="form-label" for="fast-delivery">Fast shipping</label>
+          <input class="form-input" type="radio" name="delivery" id="fast-delivery" value="Fast-shipping" checked>
+        </fieldset>
+        <fieldset>
+          <legend>Amount</legend>
+          <label class="form-label" for="0-5-amount">0-5</label>
+          <input class="form-input" type="radio" name="amount" id="0-5-amount" value="0-5" checked>
+          <label class="form-label" for="10-20-amount">10-20</label>
+          <input class="form-input" type="radio" name="amount" id="10-20-amount" value="10-20">
+          <label class="form-label" for="20-50-amount">20-50</label>
+          <input class="form-input" type="radio" name="amount" id="20-50-amount" value="20-50">
+        </fieldset>
         <button type="submit" class="button button-black">APPLY</button>
       </form>
     <div class="toy">
@@ -119,12 +119,15 @@
             <span class="toy-cost">$56.00 USD</span>
           </a>
         </li>
+      </ul>
     </div>
     <div class="selector">
-      <button class="selector-button button"><a href="#">1</a></button>
-      <button class="selector-button button"><a href="#">2</a></button>
-      <button class="selector-button button"><a href="#">3</a></button>
-      <button class="selector-button button"><a href="#">4</a></button>
+      <a class="selector-item" href="#">Back</a>
+      <a class="selector-item" href="#">1</a>
+      <a class="selector-item" href="#">2</a>
+      <a class="selector-item" href="#">3</a>
+      <a class="selector-item" href="#">4</a>
+      <a class="selector-item" href="#">Forward</a>
     </div>
   </main>
   <footer class="footer">
