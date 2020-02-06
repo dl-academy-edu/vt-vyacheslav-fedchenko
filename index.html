@@ -195,5 +195,27 @@
             <a href="#">Web Design — Direct Line Development</a>
       </section>
     </footer>
+    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+
+      <label class="form-label" for="form-name">Name</label>
+      <input class="form-input" id="form-name" type="text" name="name">
+
+      <label class="form-label-short" for="form-phone">Phone</label>
+      <input class="form-input-short" id="form-phone" type="text" name="phone">
+
+      <label class="form-label-short" for="form-email">Email</label>
+      <input class="form-input-short" id="form-email" type="email" name="email">
+
+      <label class="form-label" for="form-message">Message</label>
+      <textarea name="message" id="form-message">
+
+      </textarea> 
+      
+      <label for="accept-button">By clicking on the button, you consent to the processing of your personal data</label>
+      <input type="checkbox" id="accept-button" name="accept">
+
+      <button type="submit" class="button button-gray">SUBMIT</button>
+      <button type="button">X</button>
+    </form>
   </body>
 </html>
