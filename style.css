@@ -1,0 +1,154 @@
+/* poster */
+
+.slider-button {
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.poster {
+  background-color: #EEE4DB;
+}
+
+.poster-footer {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background-color: #C29974;
+}
+
+.poster-title {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+	line-height: 110%;
+	color: #1E0606;
+}
+
+.poster-text {
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+/*products*/
+
+.products-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 46px;
+	text-transform: uppercase;
+	color: #1E0606;
+}
+
+.product1{
+	background-color: #DBE4DB;
+}
+
+.product2{
+	background-color:rgba(186, 142, 107, 0.3);
+}
+
+.product3{
+	background-color: #F8F2DA;
+}
+
+.product4{
+	background-color: rgba(9, 3, 79, 0.17);
+}
+
+.product-title {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.button-blue{
+	background-color: rgba(112, 187, 220, 0.2);
+}
+
+.about-products {
+	background: url(/images/Delivery.jpg);
+	background-repeat: no-repeat;
+}
+
+.about-products-title {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.about-item {
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: 26px;
+	line-height: 32px;
+	color: #1E0606;
+}
+
+.about-item-selected {
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 32px;
+	color: #1E0606;
+	background-color: rgba(112, 187, 220, 0.2);
+}
+
+/*partners*/
+
+.hidden {
+	text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*about-us, map*/
+
+.about-us, .map {
+	background-color: #E1F0F7;
+}
+
+.about-us-title, .contacts {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.about-us-subtitle {
+	font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+}
+
+/*modal window*/
+
+.modal-window {
+	font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+	color: #1E0606;
+	background-color: #E5EAF8;
+}
+
+.button-gray {
+	background: #C1C1C1;
+}
+
