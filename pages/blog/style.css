@@ -1,0 +1,60 @@
+/*breadcrumbs*/
+
+.breadcrumbs-item {
+	font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+	color: #1E0606;
+}
+
+.breadcrumbs-active {
+	opacity: 0.5;
+}
+
+/*description*/
+
+.products {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+/*blog*/
+
+.blog-item {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.blog-date {
+	font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818181;
+}
+
+.blog-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+	color: #1E0606;
+}
+
+/*selector*/
+
+.selector {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1E0606;
+}

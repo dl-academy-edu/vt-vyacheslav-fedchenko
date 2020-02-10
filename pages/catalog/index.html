@@ -2,71 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Catalog</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i|Montserrat:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
       <nav class="header-nav">
-        <ul>
-          <li><a class="header-nav_item" href="#">Blog</a></li>
+        <ul class="list-point-none">
+          <li><a class="header-nav_item" href="/pages/blog/index.html">Blog</a></li>
           <li><a class="header-nav_item">Catalog</a></li>
           <li><a class="header-nav_item" href="#">About Us</a></li>
         </ul>
-        <ul>
+        <ul class="list-point-none">
           <li>
             <a class="search-link" href="#"><img src="/images/search.svg" alt="search"/></a>
           </li>
-          <li><a class="button header-button" href="#">Contact Us</a></li>
+          <li><a class="header-contact" href="#">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1 class="products">Category Products</h1>
       <div class="breadcrumbs">
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs list-point-none">
           <li class="breadcrumbs-item">
             <a href="/index.html" class="breadcrumbs-link">
               <span>Home</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <span>Catalog</span>
+            <span class="breadcrumbs-active">Catalog</span>
           </li>
         </ul>
       </div>
-      <ul class="products-list">
-        <li class="product">
+      <ul class="products-list list-point-none">
+        <li class="product1">
           <a href="#">
             <img src="/images/product-1.jpg" alt="APPAREL KIDS" class="product-img"/>
             <span class="product-title">APPAREL KIDS</span>
           </a>
         </li>
-        <li class="product">
+        <li class="product2">
           <a href="#">
             <img src="/images/product-2.png" alt="HOLIDAY SHOP" class="product-img"/>
             <span class="product-title">HOLIDAY SHOP</span>
           </a>
         </li>
-        <li class="product">
+        <li class="product3">
           <a href="#">
             <img src="/images/product-3.jpg" alt="TOYS" class="product-img"/>
             <span class="product-title">TOYS</span>
           </a>
         </li>
-        <li class="product">
+        <li class="product4">
           <a href="#">
             <img src="/images/product-4.png" alt="ACCESSORIES" class="product-img"/>
             <span class="product-title">ACCESSORIES</span>
           </a>
         </li>
-      <li class="product">
+      <li class="product5">
         <a href="#">
           <img src="/images/product-5.jpg" alt="SALE" class="product-img"/>
           <span class="product-title">SALE</span>
         </a>
       </li>
-    <li class="product">
+    <li class="product6">
       <a href="#">
         <img src="/images/product-6.jpg" alt="APPAREL ADULTS" class="product-img"/>
         <span class="product-title">APPAREL ADULTS</span>
@@ -74,7 +78,7 @@
     </li>
       </ul>
       <div class="products-info">
-        <h2>Product Description</h2>
+        <h2 class="products-info-title">Product Description</h2>
         <p>
           Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.
         </p>
@@ -89,7 +93,7 @@
     <footer class="footer">
       <section class="footer-nav">
         <h4 class="footer-nav-title">Navigation</h4>
-        <ul class="footer-nav-list">
+        <ul class="footer-nav-list list-point-none">
           <li class="footer-nav-item"><a href="#">About Us</a></li>
           <li class="footer-nav-item"><a href="#">Blog</a></li>
           <li class="footer-nav-item"><a href="#">Design Services</a></li>
@@ -100,7 +104,7 @@
       </section>
       <section class="footer-customer-info">
         <h4 class="footer-customer-info-title">Customer Information</h4>
-        <ul class="footer-customer-info-list">
+        <ul class="footer-customer-info-list list-point-none">
           <li class="customer-info-item"><a href="#">Contact Us</a></li>
           <li class="customer-info-item"><a href="#">Sale Exclusions</a></li>
           <li class="customer-info-item"><a href="#">Shipping & Returns</a></li>
@@ -115,18 +119,18 @@
         <input type="email" placeholder="Email"/>
         <button type="submit">Join</button>
         </form>
-        <ul class="social-list">
+        <ul class="social-list list-point-none">
           <li class="social-item">
-            <a href="#"><img src="/images/Facebook.svg" alt="Facebook logo" />Facebook</a>
+            <a href="#"><img src="/images/Facebook.svg" alt="Facebook logo"></a>
           </li>
           <li class="social-item">
-            <a href="#"><img src="/images/Twitter.svg" alt="Twitter logo" />Twitter</a>
+            <a href="#"><img src="/images/Twitter.svg" alt="Twitter logo"></a>
           </li>
           <li class="social-item">
-            <a href="#"><img src="/images/Pinterest.svg" alt="Pinterest logo" />Pinterest</a>
+            <a href="#"><img src="/images/Pinterest.svg" alt="Pinterest logo"></a>
           </li>
           <li class="social-item">
-            <a href="#"><img src="/images/Instagram.svg" alt="Instagram logo" />Instagram</a>
+            <a href="#"><img src="/images/Instagram.svg" alt="Instagram logo"></a>
           </li>
         </ul>
       </section>
@@ -143,7 +147,7 @@
               </div>
             </div>
             <p>Copyright © 2018 Dlk • Design Life Kids</p>
-            <a href="#">Web Design — Direct Line Development</a>
+            <a class="web-developer" href="#">Web Design — Direct Line Development</a>
       </section>
     </footer>
   </body>
