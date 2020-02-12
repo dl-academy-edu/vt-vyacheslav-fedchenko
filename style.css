@@ -5,7 +5,10 @@
 }
 
 .poster {
-  background-color: #EEE4DB;
+	background-color: #EEE4DB;
+	margin-top: 79px;
+	padding-bottom: 98px;
+	height: 411px;
 }
 
 .poster-footer {
@@ -13,7 +16,19 @@
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
-  background-color: #C29974;
+	background-color: #C29974;
+	text-transform: uppercase;
+	height: 39px;
+	padding: 11px 300px;
+}
+
+.poster__item {
+	max-height: 372px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 133px;
+	display: flex;
+	align-items: flex-start;
 }
 
 .poster-title {
@@ -22,6 +37,8 @@
   font-size: 40px;
 	line-height: 110%;
 	color: #1E0606;
+	margin-top: 0;
+	width: 307px;
 }
 
 .poster-text {
@@ -29,7 +46,33 @@
 	font-style: italic;
 	font-size: 20px;
   line-height: 25px;
-  color: #1E0606;
+	color: #1E0606;
+	width: 152px;
+}
+
+.poster-button {
+	width: 161px;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 62px;
+	padding-left: 31px;
+	
+}
+
+.slider-button {
+	margin-top: 10px;
+}
+
+.poster__content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 89px;
+	padding-top: 0;
+	padding-bottom: 89px;
 }
 
 /*products*/

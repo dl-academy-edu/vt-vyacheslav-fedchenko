@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a href="#"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
+  <header class="header container">
+    <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
     <nav class="header-nav">
-      <ul>
-        <li><a class="header-nav_item" href="#">Blog</a></li>
-        <li><a class="header-nav_item" href="#">Catalog</a></li>
+      <ul class="header-list-links list-point-none">
+        <li><a class="header-nav_item" href="/pages/blog/index.html">Blog</a></li>
+        <li><a class="header-nav_item" href="/pages/catalog/index.html">Catalog</a></li>
         <li><a class="header-nav_item" href="#">About Us</a></li>
       </ul>
-      <ul>
+      <ul class="header-list-contacts list-point-none">
         <li>
           <a class="search-link" href="#"><img src="/images/search.svg" alt="search"/></a>
         </li>
@@ -26,36 +26,57 @@
     </nav>
   </header>
   <main>
-    <h1 class="contact">Contact  Us</h1>
+    <h1 class="products">Contact us</h1>
     <div class="breadcrumbs">
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs list-point-none">
         <li class="breadcrumbs-item">
           <a href="/index.html" class="breadcrumbs-link">
             <span>Home</span>
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <span>Contact us</span>
+          <span class="breadcrumbs-active">Contact us</span>
         </li>
       </ul>
     </div>
-    <!-- Форма-->
-    <div class="contact-info">
+    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+
+      <label class="form-label" for="form-name">Name</label>
+      <input class="form-input" id="form-name" type="text" name="name" value="Ivan Ivanov">
+
+      <label class="form-label-short" for="form-phone">Phone</label>
+      <input class="form-input-short" id="form-phone" type="text" name="phone">
+
+      <label class="form-label-short" for="form-email">Email</label>
+      <input class="form-input-short" id="form-email" type="email" name="email">
+
+      <label class="form-label" for="form-message">Message</label>
+      <textarea name="message" id="form-message">
+
+      </textarea> 
+      
+      <label for="accept-button">By clicking on the button, you consent to the processing of your personal data</label>
+      <input type="checkbox" id="accept-button" name="accept">
+
+      <button type="submit" class="button button-gray">SUBMIT</button>
+      <button type="button">X</button>
+    </form>
+    <artile class="contact-info">
       <p>
         Our support team are on-hand to assist with any issues you are experiencing.
       </p>
       <p>
         Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
       </p>
-      <p>
+      <h2 class="contact-info-title">
         An expert is waiting to help you!
-      </p>
-    </div>
+      </h2>
+    </artile>
   </main>
   <footer class="footer">
     <section class="footer-nav">
       <h4 class="footer-nav-title">Navigation</h4>
-      <ul class="footer-nav-list">
+      <ul class="footer-nav-list list-point-none">
         <li class="footer-nav-item"><a href="#">About Us</a></li>
         <li class="footer-nav-item"><a href="#">Blog</a></li>
         <li class="footer-nav-item"><a href="#">Design Services</a></li>
@@ -66,7 +87,7 @@
     </section>
     <section class="footer-customer-info">
       <h4 class="footer-customer-info-title">Customer Information</h4>
-      <ul class="footer-customer-info-list">
+      <ul class="footer-customer-info-list list-point-none">
         <li class="customer-info-item"><a href="#">Contact Us</a></li>
         <li class="customer-info-item"><a href="#">Sale Exclusions</a></li>
         <li class="customer-info-item"><a href="#">Shipping & Returns</a></li>
@@ -81,7 +102,7 @@
       <input type="email" placeholder="Email"/>
       <button type="submit">Join</button>
       </form>
-      <ul class="social-list">
+      <ul class="social-list list-point-none">
         <li class="social-item">
           <a href="#"><img src="/images/Facebook.svg" alt="Facebook logo"></a>
         </li>
