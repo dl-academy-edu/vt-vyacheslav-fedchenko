@@ -119,9 +119,93 @@ button:disabled {
 
 .footer-nav-title, .footer-customer-info-title, .footer-connect-title {
   color: #AAAAAA;
+  padding-bottom: 23px;
+  border-bottom: solid 1px #666666;
+  width: 380px;
 }
 
 .web-developer {
   color: #A2A2A2;
+}
+
+.footer-nav-item, .customer-info-item {
+  padding-bottom: 15px;
+}
+
+.footer-row {
+  padding-top: 23px;
+  padding-bottom: 100px;
+  border-top: solid 1px #666666;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.company-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.company-rating-title {
+  padding-right: 25px;
+  margin-left: 0;
+}
+
+.copyright {
+  padding-left: 147px;
+  padding-right: 90px;
+}
+
+input {
+  width: 321px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #EBEBEB;
+  padding-left: 15px;
+	border: none;
+	background-color:  #666666;
+}
+
+.button-connect {
+  border: none;
+  height: 40px;
+}
+
+.social-list {
+  display: flex;
+  padding-top: 25px;
+}
+
+.social-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  width: 30px; 
+  height: 30px;
+  flex: 0 0 30px;
+  background: #666666;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.hidden {
+	position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
 }
 
