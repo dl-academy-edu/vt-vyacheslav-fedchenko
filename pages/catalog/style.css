@@ -6,33 +6,65 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
-	color: #1E0606;
+  color: #1E0606;
+  padding-right: 20px;
 }
 
 .breadcrumbs-active {
 	opacity: 0.5;
 }
 
+.breadcrumbs-list {
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 /*description*/
 
 .products {
-	font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-  text-transform: uppercase;
-  color: #1E0606;
+  padding: 0;
 }
 
-.products-list {
+.product {
+	width: 280px;
+	height: 270px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+  position: relative;
+  margin-bottom: 23px;
+  margin-left: 23px;
+}
+
+.product-title {
 	font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
   color: #FFFFFF;
-  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+	text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+	position: absolute;
+	top:50%;
+  left:50%;
+	transform:translate(-50%, -50%);
+	text-align: center;
 }
+
+.product-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.products-list {
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
 
 .product1 {
 	background-color: #DBE4DB;
@@ -43,11 +75,13 @@
 }
 
 .product3 {
-	background-color: #F8F2DA;
+  background-color: #F8F2DA;
+  margin-right: 300px;
 }
 
 .product4 {
-	background-color: rgba(9, 3, 79, 0.17);
+  background-color: rgba(9, 3, 79, 0.17);
+  margin-left: 200px;
 }
 
 .product5 {
@@ -55,7 +89,16 @@
 }
 
 .product6 {
-	background-color: rgba(125, 151, 218, 0.2);
+  background-color: rgba(125, 151, 218, 0.2);
+  margin-right: 120px;
+}
+
+.products-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  padding-left: 200px;
+  padding-right: 300px;
 }
 
 .products-info-title {
@@ -65,4 +108,18 @@
   line-height: 46px;
   text-transform: uppercase;
   color: #1E0606;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.product-title:hover {
+	text-decoration: underline;
+}
+.product-title:active {
+	text-decoration: underline;
+}
+
+.products-info-text {
+  margin: 0;
+  padding-bottom: 15px;
 }
