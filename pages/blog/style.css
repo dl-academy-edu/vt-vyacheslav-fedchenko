@@ -6,11 +6,18 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
-	color: #1E0606;
+  color: #1E0606;
+  padding-right: 20px;
 }
 
 .breadcrumbs-active {
 	opacity: 0.5;
+}
+
+.breadcrumbs-list {
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /*description*/
@@ -26,10 +33,27 @@
 
 /*blog*/
 
+.products {
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.blog {
+  margin-bottom: 53px;
+}
+
 .blog-item {
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
+  width: 380px;
+  height: 491px;
+  position: relative;
 }
 
 .blog-date {
@@ -38,6 +62,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #818181;
+  margin-top: 20px;
 }
 
 .blog-title {
@@ -45,7 +70,29 @@
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 31px;
-	color: #1E0606;
+  color: #1E0606;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-title:hover {
+	text-decoration: underline;
+}
+.blog-title:active {
+	text-decoration: underline;
+}
+
+.blog-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.blog-list {
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 /*selector*/
@@ -57,4 +104,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #1E0606;
+  margin-bottom: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selector-pages {
+  display: flex;
+}
+
+.selector-item {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.selector-item-active {
+  color: #C29974;
+}
+
+.selector-item:hover {
+  opacity: .75;
 }

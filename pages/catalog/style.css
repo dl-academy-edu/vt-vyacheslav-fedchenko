@@ -24,6 +24,12 @@
 
 .products {
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .product {
@@ -63,6 +69,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 

@@ -53,10 +53,20 @@ fieldset {
 
 /*toy list*/
 
+.products {
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
 .toy {
   margin-top: 50px;
   margin-bottom: 53px;
-  
+
 }
 
 .products {
@@ -119,7 +129,7 @@ fieldset {
 	width: 207px;
   height: 207px;
   background-color: #E5EAF8;
-  opacity: 0.9;
+  opacity: .9;
 }
 
 .toy-item:active:before {
