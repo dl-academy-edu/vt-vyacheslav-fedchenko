@@ -5,6 +5,7 @@ body {
 
 a { 
   text-decoration: none; 
+  color: #000000;
 }
 
 html { 
@@ -142,6 +143,7 @@ button:disabled {
 }
 
 /*footer*/
+
 .footer {
   font-family: Open Sans;
   font-weight: normal;
@@ -149,6 +151,10 @@ button:disabled {
   line-height: 22px;
   color: #FFFFFF;
   background-color: #434343;
+}
+
+.footer-item {
+  color: #FFFFFF;
 }
 
 .footer-nav-title, .footer-customer-info-title, .footer-connect-title {
@@ -336,4 +342,5 @@ button:disabled {
   width: 1px !important; 
   overflow: hidden;
 }
+
 
