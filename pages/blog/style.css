@@ -20,6 +20,10 @@
   margin-bottom: 50px;
 }
 
+.breadcrumbs-item-active:hover {
+  opacity: .75;
+}
+
 /*description*/
 
 .products {

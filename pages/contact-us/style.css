@@ -20,6 +20,10 @@
   margin-bottom: 50px;
 }
 
+.breadcrumbs-item-active:hover {
+  opacity: .75;
+}
+
 /*description*/
 
 .products {
@@ -136,7 +140,6 @@
 	width: 100%;
 	background-color: #FFFFFF;
   border: 2px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
 }
 
 .form-input:hover {
@@ -148,6 +151,7 @@
 }
 
 .input-message {
-	min-height: 150px;
+	height: 150px;
+	width: 100%;
 }
 

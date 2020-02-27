@@ -6,6 +6,7 @@
 	border: none;
 	width: 31px;
 	height: 3px;
+	cursor: pointer;
 }
 
 .slider-button:hover {
@@ -99,6 +100,7 @@
 	color: rgba(30, 6, 6, 0.05);
 }
 
+
 /*products*/
 
 .products-title {
@@ -111,10 +113,10 @@
 	margin: 90px 30px 0 0;
 }
 
-.product-title:hover {
+a:hover > .product-title {
 	text-decoration: underline;
 }
-.product-title:active {
+a:active > .product-title {
 	text-decoration: underline;
 }
 
@@ -214,10 +216,12 @@
 	width: 326px;
   height: 55px;
 	background-color: rgba(112, 187, 220, 0.2);
+	pointer-events: none;
 }
 
 .about-item-link:hover {
-  font-weight: bold;
+	font-weight: bold;
+	transition-duration: 2s;
 }
 
 .about-info {
@@ -374,7 +378,7 @@
 }
 
 .form-checkbox:checked + .form-checkbox-indicator {
-  background: url(images/Check.svg) no-repeat; 
+  background: url(/images/Check.svg) no-repeat; 
 }
 
 .form-checkbox-indicator {
@@ -389,6 +393,7 @@
 	display: flex;
 	align-items: center;
 	padding-top: 20px;
+	cursor: pointer;
 }
 
 .modal-bg {
@@ -428,7 +433,6 @@
 	width: 100%;
 	background-color: #FFFFFF;
   border: 2px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
 }
 
 .form-input:hover {

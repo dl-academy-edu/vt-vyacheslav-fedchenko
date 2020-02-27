@@ -13,15 +13,15 @@
       <a href="#"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
       <nav class="header-nav">
         <ul class="header-list-links list-point-none">
-          <li><a class="header-nav_item" href="/pages/blog/index.html">Blog</a></li>
-          <li><a class="header-nav_item" href="/pages/catalog/index.html">Catalog</a></li>
-          <li><a class="header-nav_item" href="#">About Us</a></li>
+          <li><a class="header-nav_item header_active" href="/pages/blog/index.html">Blog</a></li>
+          <li><a class="header-nav_item header_active" href="/pages/catalog/index.html">Catalog</a></li>
+          <li><a class="header-nav_item header_active" href="/pages/toys/index.html">Toys</a></li>
         </ul>
         <ul class="header-list-contacts list-point-none">
           <li>
-            <a class="search-link" href="#"><img src="/images/search.svg" alt="search"/></a>
+            <a class="search-link header_active" href="#"><img src="/images/search.svg" alt="search"/></a>
           </li>
-          <li><a class="header-contact" href="/pages/contact-us/index.html">Contact Us</a></li>
+          <li><a class="header-contact header_active" href="/pages/contact-us/index.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -30,7 +30,7 @@
         <section class="poster">
           <div class="slider">
             <span class="slider-number">01</span>
-            <button class="slider-button-active"></button>
+            <button class="slider-button slider-button-active"></button>
             <button class="slider-button"></button>
             <button class="slider-button"></button>
             <button class="slider-button"></button>
@@ -190,7 +190,7 @@
         <section class="footer-connect">
           <h4 class="footer-connect-title">Connect</h4>
           <form action="#">
-          <input type="email" class="footer-connect-form" placeholder="Email"/>
+          <input type="email" class="footer-connect-form" value="Email"/>
           <button class="button button-connect" type="submit">Join</button>
           </form>
           <ul class="social-list list-point-none">
@@ -266,12 +266,12 @@
           </div>
           <div class="form-row-short">
             <label class="form-label" for="form-email">Email</label>
-            <input class="form-input" id="form-email" name="message">
+            <input class="form-input" id="form-email" type="email" name="email">
           </div>
         </div>
         <div class="form-row">
         <label class="form-label" for="form-message">Message</label>
-        <input class="form-input input-message" id="form-message" type="email" name="email">
+        <input class="form-input input-message" id="form-message" name="message">
         </div>
         <label class="checkbox-label">
           <input class="form-checkbox hidden" type="checkbox" value="accept" name="accept-button">

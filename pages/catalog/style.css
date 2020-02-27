@@ -20,6 +20,10 @@
   margin-bottom: 50px;
 }
 
+.breadcrumbs-item-active:hover {
+  opacity: .75;
+}
+
 /*description*/
 
 .products {
@@ -119,10 +123,10 @@
   padding-bottom: 25px;
 }
 
-.product-title:hover {
+a:hover > .product-title {
 	text-decoration: underline;
 }
-.product-title:active {
+a:active > .product-title {
 	text-decoration: underline;
 }
 

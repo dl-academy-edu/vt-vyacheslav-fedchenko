@@ -10,18 +10,18 @@
 </head>
 <body>
   <header class="header container">
-    <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
+    <a href="/index.html"><img class="header-logo header_active" src="/images/logo.svg" alt="logo"/></a>
     <nav class="header-nav">
       <ul class="header-list-links list-point-none">
-        <li><a class="header-nav_item" href="/pages/blog/index.html">Blog</a></li>
-        <li><a class="header-nav_item" href="/pages/catalog/index.html">Catalog</a></li>
-        <li><a class="header-nav_item" href="#">About Us</a></li>
+        <li><a class="header-nav_item header_active" href="/pages/blog/index.html">Blog</a></li>
+        <li><a class="header-nav_item header_active" href="/pages/catalog/index.html">Catalog</a></li>
+        <li><a class="header-nav_item" href="#">Toys</a></li>
       </ul>
       <ul class="header-list-contacts list-point-none">
         <li>
-          <a class="search-link" href="#"><img src="/images/search.svg" alt="search"/></a>
+          <a class="search-link header_active" href="#"><img src="/images/search.svg" alt="search"/></a>
         </li>
-        <li><a class="header-contact" href="/pages/contact-us/index.html">Contact Us</a></li>
+        <li><a class="header-contact header_active" href="/pages/contact-us/index.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +30,7 @@
       <h1 class="products">Toy for kids</h1>
         <div class="breadcrumbs">
         <ul class="breadcrumbs-list list-point-none">
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-item-active">
             <a href="/index.html" class="breadcrumbs-link">
               <span>Home</span>
             </a>
@@ -40,7 +40,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
               </svg>
           </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-item-active">
             <a href="/pages/catalog/index.html" class="breadcrumbs-link">
               <span>Catalog</span>
             </a>
@@ -60,35 +60,66 @@
       <form class="filter container" name="select" method="get">
         <fieldset>
           <legend class="filter-legend">Cost</legend>
-          <label class="form-label" for="form-cost"></label>
-          <input class="form-input" type="range" name="cost" id="form-cost" min="0" max="500" value="100">
+          <label class="slidecontainer">
+              <input type="range" min="0" max="500" value="100" class="slider" id="myRange">
+              <div class="range-cost">
+                <span>0</span>
+                <span>500</span>
+              </div>
+          </label>
         </fieldset>
         <fieldset class="fieldset-color">
           <legend class="filter-legend">Color</legend>
-          <label class="form-label" for="black-color">Black</label>
-          <input class="form-input" type="checkbox" name="color" id="black-color" value="Black" checked>
-          <label class="form-label" for="blue-color">Blue</label>
-          <input class="form-input" type="checkbox" name="color" id="blue-color" value="Blue">
-          <label class="form-label" for="green-color">Green</label>
-          <input class="form-input" type="checkbox" name="color" id="green-color" value="Green">
-          <label class="form-label" for="white-color">White</label>
-          <input class="form-input" type="checkbox" name="color" id="white-color" value="White">
+            <label class="checkbox-label">
+              <input class="form-checkbox hidden" type="checkbox" value="Black" name="color" checked>
+              <span class="form-checkbox-indicator"></span>
+              Black
+            </label>
+            <label class="checkbox-label">
+              <input class="form-checkbox hidden" type="checkbox" value="Blue" name="color">
+              <span class="form-checkbox-indicator"></span>
+              Blue
+            </label>
+            <label class="checkbox-label">
+              <input class="form-checkbox hidden" type="checkbox" value="Green" name="color">
+              <span class="form-checkbox-indicator"></span>
+              Green
+            </label>
+            <label class="checkbox-label">
+              <input class="form-checkbox hidden" type="checkbox" value="White" name="color">
+              <span class="form-checkbox-indicator"></span>
+              White
+            </label>
         </fieldset>
         <fieldset class="fieldset-delivery">
           <legend class="filter-legend">Delivery</legend class="filter-legend">
-          <label class="form-label" for="free-delivery">Free shipping</label>
-          <input class="form-input" type="radio" name="delivery" id="free-delivery" value="Free-shipping">
-          <label class="form-label" for="fast-delivery">Fast shipping</label>
-          <input class="form-input" type="radio" name="delivery" id="fast-delivery" value="Fast-shipping" checked>
+            <label class="radio-label">
+              <input class="form-radio hidden" type="radio" value="Free-shipping" name="delivery">
+              <span class="form-radio-indicator"></span>
+              Free shipping
+            </label>
+            <label class="radio-label">
+              <input class="form-radio hidden" type="radio" value="Fast-shipping" name="delivery" checked>
+              <span class="form-radio-indicator"></span>
+              Fast shipping
+            </label>
         </fieldset>
         <fieldset class="fieldset-amount">
           <legend class="filter-legend">Amount</legend>
-          <label class="form-label" for="0-5-amount">0-5</label>
-          <input class="form-input" type="radio" name="amount" id="0-5-amount" value="0-5" checked>
-          <label class="form-label" for="10-20-amount">10-20</label>
-          <input class="form-input" type="radio" name="amount" id="10-20-amount" value="10-20">
-          <label class="form-label" for="20-50-amount">20-50</label>
-          <input class="form-input" type="radio" name="amount" id="20-50-amount" value="20-50">
+          <div class="radio-box-container">
+          <label class="radio-box-label">
+            <input class="form-radio-box hidden" type="radio" value="0-5-amount" name="amount" checked>
+            <span class="form-radio-box-indicator">0-5</span>
+          </label>
+          <label class="radio-box-label">
+              <input class="form-radio-box hidden" type="radio" value="10-20-amount" name="amount">
+              <span class="form-radio-box-indicator">10-20</span>
+          </label>
+          <label class="radio-box-label">
+              <input class="form-radio-box hidden" type="radio" value="20-50-amount" name="amount">
+              <span class="form-radio-box-indicator">20-50</span>
+          </div>
+          </label>
         </fieldset>
         <button type="submit" class="fieldset-button button button-black">APPLY</button>
       </form>
@@ -97,42 +128,54 @@
       <ul class="toy-list list-point-none">
         <li class="toy-item">
           <a href="#">
-            <img src="/images/toy1.jpg" alt="Selected toy" class="toy-img"/>
+            <div class="toy-select">
+              <img src="/images/toy1.jpg" alt="Selected toy" class="toy-img"/>
+            </div>
             <span class="toy-title">SHARKY BEAN BAG CHAIR COVER</span>
             <span class="toy-cost">$60.00 USD</span>
           </a>
         </li>
         <li class="toy-item">
           <a href="#">
-            <img src="/images/toy2.jpg" alt="Selected toy" class="toy-img"/>
+            <div class="toy-select">
+              <img src="/images/toy2.jpg" alt="Selected toy" class="toy-img"/>
+            </div>
             <span class="toy-title">BRASS DECO FRAMES</span>
             <span class="toy-cost">$66.00 USD</span>
           </a>
         </li>
         <li class="toy-item">
           <a href="#">
-            <img src="/images/toy3.jpg" alt="Selected toy" class="toy-img"/>
+            <div class="toy-select">
+              <img src="/images/toy3.jpg" alt="Selected toy" class="toy-img"/>
+            </div>
             <span class="toy-title">CIBO FULL APRON</span>
             <span class="toy-cost">$60.00 USD</span>
           </a>
         </li>
         <li class="toy-item">
           <a href="#">
-            <img src="/images/toy4.jpg" alt="Selected toy" class="toy-img"/>
+            <div class="toy-select">
+              <img src="/images/toy4.jpg" alt="Selected toy" class="toy-img"/>
+            </div>
             <span class="toy-title">GATCHA GATCHA GUMBALL MACHINE</span>
             <span class="toy-cost">$56.00 USD</span>
           </a>
         </li>
         <li class="toy-item">
           <a href="#">
-            <img src="/images/toy5.jpg" alt="Selected toy" class="toy-img"/>
+            <div class="toy-select">
+              <img src="/images/toy5.jpg" alt="Selected toy" class="toy-img"/>
+            </div>
             <span class="toy-title">CHRISTMAS ADVENT SCENTED CANDLE</span>
             <span class="toy-cost">$29.00 USD</span>
           </a>
         </li>
         <li class="toy-item">
           <a href="#">
-            <img src="/images/toy6.jpg" alt="Selected toy" class="toy-img"/>
+            <div class="toy-select">
+              <img src="/images/toy6.jpg" alt="Selected toy" class="toy-img"/>
+            </div>
             <span class="toy-title">TANGLE SPINNING TEA LIGHT</span>
             <span class="toy-cost">$56.00 USD</span>
           </a>
@@ -185,7 +228,7 @@
       <section class="footer-connect">
         <h4 class="footer-connect-title">Connect</h4>
         <form action="#">
-        <input type="email" class="footer-connect-form" placeholder="Email"/>
+        <input type="email" class="footer-connect-form" value="Email"/>
         <button class="button button-connect" type="submit">Join</button>
         </form>
         <ul class="social-list list-point-none">

@@ -10,16 +10,16 @@
 </head>
 <body>
   <header class="header container">
-    <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
+    <a href="/index.html"><img class="header-logo header_active" src="/images/logo.svg" alt="logo"/></a>
     <nav class="header-nav">
       <ul class="header-list-links list-point-none">
-        <li><a class="header-nav_item" href="/pages/blog/index.html">Blog</a></li>
-        <li><a class="header-nav_item" href="/pages/catalog/index.html">Catalog</a></li>
-        <li><a class="header-nav_item" href="#">About Us</a></li>
+        <li><a class="header-nav_item header_active" href="/pages/blog/index.html">Blog</a></li>
+        <li><a class="header-nav_item header_active" href="/pages/catalog/index.html">Catalog</a></li>
+        <li><a class="header-nav_item header_active" href="/pages/toys/index.html">Toys</a></li>
       </ul>
       <ul class="header-list-contacts list-point-none">
         <li>
-          <a class="search-link" href="#"><img src="/images/search.svg" alt="search"/></a>
+          <a class="search-link header_active" href="#"><img src="/images/search.svg" alt="search"/></a>
         </li>
         <li><a class="header-contact" href="#">Contact Us</a></li>
       </ul>
@@ -30,7 +30,7 @@
     <h1 class="products">Contact us</h1>
     <div class="breadcrumbs">
       <ul class="breadcrumbs-list list-point-none">
-        <li class="breadcrumbs-item">
+        <li class="breadcrumbs-item breadcrumbs-item-active">
           <a href="/index.html" class="breadcrumbs-link">
             <span>Home</span>
           </a>
@@ -60,12 +60,12 @@
             </div>
             <div class="form-row-short">
               <label class="form-label" for="form-email">Email</label>
-              <input class="form-input" id="form-email" name="message">
+              <input class="form-input" id="form-email" type="email" name="email">
             </div>
           </div>
           <div class="form-row">
           <label class="form-label" for="form-message">Message</label>
-          <input class="form-input input-message" id="form-message" type="email" name="email">
+          <input class="form-input input-message" id="form-message" name="message">
           </div>
           <label class="checkbox-label">
             <input class="form-checkbox hidden" type="checkbox" value="accept" name="accept-button">
@@ -115,7 +115,7 @@
       <section class="footer-connect">
         <h4 class="footer-connect-title">Connect</h4>
         <form action="#">
-        <input type="email" class="footer-connect-form" placeholder="Email"/>
+        <input type="email" class="footer-connect-form" value="Email"/>
         <button class="button button-connect" type="submit">Join</button>
         </form>
         <ul class="social-list list-point-none">
