@@ -274,12 +274,8 @@ a:active > .product-title {
 
 /*about-us, map*/
 
-.map {
-	width: 483px;
-}
-
-.about-us {
-	width: 500px;
+.map, .about-us {
+	width: 513px;
 	padding-left: 30px;
 }
 
@@ -323,12 +319,12 @@ a:active > .product-title {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-bottom: 106px;
-	padding-right: 27px;
 }
 
 .about-us-box {
 	background-color: #E1F0F7;
 	width: 543px;
+	
 }
 
 .about-us-box1 {
@@ -338,6 +334,7 @@ a:active > .product-title {
 
 .about-us-box2 {
 	height: 209px;
+	margin-right: 37px;
 }
 
 /* slider */
