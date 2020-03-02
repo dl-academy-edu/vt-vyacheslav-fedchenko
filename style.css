@@ -1,16 +1,19 @@
 /* poster */
 
+
 .slider-button {
 	background-color: #D6CAC2;
-	margin-top: 10px;
+	margin-top: 11px;
 	border: none;
 	width: 31px;
 	height: 3px;
 	cursor: pointer;
+	margin-left: 3px;
 }
 
 .slider-button:hover {
 	background-color: #725F5B;
+	transition-duration: .5s;
 }
 
 .slider-button-active {
@@ -23,7 +26,7 @@
 
 .poster {
 	background-color: #EEE4DB;
-	margin-top: 79px;
+	margin-top: 70px;
 	position: relative;
 }
 
@@ -51,6 +54,7 @@
 	justify-content: space-between;
 	margin: 89px 0 89px 0;
 	padding: 0;
+	padding-left: 1px;
 }
 
 .poster-pic {
@@ -66,8 +70,8 @@
 	line-height: 110%;
 	color: #1E0606;
 	margin: 0;
-	width: 307px;
-	padding-bottom: 20px;
+	width: 310px;
+	padding: 2px 0 19px 0;
 }
 
 .poster-text {
@@ -77,7 +81,8 @@
   line-height: 25px;
 	color: #1E0606;
 	width: 152px;
-	padding-bottom: 20px;
+	padding-bottom: 19px;
+	padding-left: 1px;
 }
 
 .poster-button {
@@ -98,6 +103,7 @@
   font-weight: 300;
   font-size: 60px;
 	color: rgba(30, 6, 6, 0.05);
+	padding-bottom: 4px;
 }
 
 
@@ -125,6 +131,7 @@ a:active > .product-title {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-bottom: 0;
+	margin-top: 30px;
 }
 
 .product {
@@ -194,7 +201,7 @@ a:active > .product-title {
   text-transform: uppercase;
 	color: #1E0606;
 	margin-top: 30px;
-	margin-bottom: 17px;
+	margin-bottom: 20px;
 }
 
 .about-item {
@@ -203,10 +210,8 @@ a:active > .product-title {
 	font-size: 26px;
 	line-height: 32px;
 	color: #1E0606;
-	margin-bottom: 22px;
-
+	margin-bottom: 23px;
 }
-
 
 .about-item-link:hover:before {
 	content: '';
@@ -221,12 +226,11 @@ a:active > .product-title {
 
 .about-item-link:hover {
 	font-weight: bold;
-	transition-duration: 2s;
 }
 
 .about-info {
-	margin-top: 8px;
-	margin-bottom: 35px;
+	margin-top: 29px;
+	margin-bottom: 34px;
 }
 
 .about-products-box {
@@ -236,7 +240,7 @@ a:active > .product-title {
 }
 
 .about-products-pic {
-	padding-bottom: 90px;
+	padding-bottom: 75px;
 	padding-right: 20px;
 }
 
@@ -256,11 +260,12 @@ a:active > .product-title {
 .partners-list {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
 }
 
 .partners {
-	padding-bottom: 90px;
+	padding-bottom: 97px;
 }
 
 .partners-item:hover {
@@ -269,9 +274,13 @@ a:active > .product-title {
 
 /*about-us, map*/
 
-.about-us, .map {
+.map {
 	width: 483px;
-	margin-left: 30px;
+}
+
+.about-us {
+	width: 500px;
+	padding-left: 30px;
 }
 
 .about-us-title, .contacts {
@@ -282,7 +291,7 @@ a:active > .product-title {
   text-transform: uppercase;
 	color: #1E0606;
 	margin: -26px 0 0 0;
-	padding-bottom: 10px;
+	padding-bottom: 11px;
 }
 
 .contacts {
@@ -300,7 +309,7 @@ a:active > .product-title {
 
 .about-us-info {
 	margin: 0;
-	padding-bottom: 29px;
+	padding-bottom: 30px;
 	padding-top: 10px;
 }
 
@@ -313,7 +322,8 @@ a:active > .product-title {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-bottom: 107px;
+	padding-bottom: 106px;
+	padding-right: 27px;
 }
 
 .about-us-box {
@@ -337,22 +347,23 @@ a:active > .product-title {
 	height: 37px;
 	padding: 0;
 	margin-right: 6px;
-	padding-top: 3px;
+	margin-bottom: 6px;
 	border: none;
 }
 
 .slider-text {
 	width: 580px;
 	margin-left: 14px;
-	margin-top: 13px;
+	margin-top: 11px;
 }
 
 .slider-category {
 	display: flex;
 	flex-direction: row;
-	padding-bottom: 90px;
+	padding-bottom: 74px;
 	justify-content: start;
 	align-items: center;
+	padding-left: 0;
 }
 
 /*modal window*/
