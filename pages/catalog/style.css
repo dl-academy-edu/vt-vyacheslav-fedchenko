@@ -20,7 +20,7 @@
   margin-bottom: 48px;
 }
 
-.breadcrumbs-item-active:hover {
+.breadcrumbs-link-active:hover {
   opacity: .75;
 }
 
@@ -76,32 +76,15 @@
   margin-top: 0;
 }
 
-
-.product1 {
-  background-color: #DBE4DB;
-  
-}
-
-.product2 {
-	background-color: rgba(186, 142, 107, 0.3);
-}
-
-.product3 {
-  background-color: #F8F2DA;
+.product:nth-child(3) {
   margin-right: 320px;
 }
 
-.product4 {
-  background-color: rgba(9, 3, 79, 0.17);
+.product:nth-child(4) {
   margin-left: 220px;
 }
 
-.product5 {
-	background-color: rgba(207, 68, 111, 0.25);
-}
-
-.product6 {
-  background-color: rgba(125, 151, 218, 0.2);
+.product:nth-child(6) {
   margin-right: 120px;
 }
 

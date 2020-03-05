@@ -20,7 +20,7 @@
   margin-bottom: 48px;
 }
 
-.breadcrumbs-item-active:hover {
+.breadcrumbs-link-active:hover {
   opacity: .75;
 }
 
@@ -60,7 +60,8 @@
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   position: relative;
 }
 
@@ -82,10 +83,10 @@
   margin-bottom: 15px;
 }
 
-.blog-title:hover {
+.blog-link:hover {
 	text-decoration: underline;
 }
-.blog-title:active {
+.blog-link:active {
 	text-decoration: underline;
 }
 

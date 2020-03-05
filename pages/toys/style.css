@@ -20,7 +20,7 @@
   margin-bottom: 49px;
 }
 
-.breadcrumbs-item-active:hover {
+.breadcrumbs-link-active:hover {
   opacity: .75;
 }
 
