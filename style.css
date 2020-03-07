@@ -408,44 +408,6 @@ a:active > .product-title {
   display: none;
 }
 
-/* Forms */
-
-.form-row-short {
-	width: 290px;
-}
-
-.form-row {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 43px;
-	width: 600px;
-}
-
-.form-label {
-	top: 20px;
-	position: absolute;
-}
-
-.form-input {
-	padding: 13px 19px;
-	width: 100%;
-	background-color: #FFFFFF;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.form-input:hover {
-	box-shadow: 1px 1px 0 #cccccc inset, -1px -1px 0 #cccccc inset;
-}
-
-.form-input:active {
-	box-shadow: 0 0 0 #cccccc inset, 0 0 0 #cccccc inset;
-}
-
-.input-message {
-	min-height: 150px;
-}
-
 .modal-close {
 	border: none;
 	background-color: transparent;
