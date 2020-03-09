@@ -1,35 +1,20 @@
-/*breadcrumbs*/
-
-.breadcrumbs-item {
-	font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-	color: #1E0606;
-}
-
-.breadcrumbs-active {
-	opacity: 0.5;
-}
-
-/*description*/
-
-.products {
-	font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-  text-transform: uppercase;
-  color: #1E0606;
-}
-
 /*blog*/
+
+.blog {
+  margin-bottom: 18px;
+}
+
+.blog-img {
+  padding-bottom: 10px;
+}
 
 .blog-item {
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
 }
 
 .blog-date {
@@ -45,7 +30,30 @@
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 31px;
-	color: #1E0606;
+  color: #1E0606;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.blog-link > .blog-title:hover {
+	text-decoration: underline;
+}
+.blog-link > .blog-title:active {
+	text-decoration: underline;
+}
+
+.blog-text {
+  margin-top: 0;
+  margin-bottom: 34px;
+  line-height: 25px;
+}
+
+.blog-list {
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 19px;
+  margin-top: 0;
 }
 
 /*selector*/
@@ -57,4 +65,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #1E0606;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selector-pages {
+  display: flex;
+}
+
+.selector-item {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.selector-item-active {
+  color: #C29974;
+}
+
+.selector-item:hover {
+  opacity: .75;
 }

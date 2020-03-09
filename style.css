@@ -1,11 +1,19 @@
 /* poster */
 
+
 .slider-button {
 	background-color: #D6CAC2;
-	margin-top: 10px;
+	margin-top: 11px;
 	border: none;
 	width: 31px;
 	height: 3px;
+	cursor: pointer;
+	margin-left: 3px;
+}
+
+.slider-button:hover {
+	background-color: #725F5B;
+	transition-duration: .5s;
 }
 
 .slider-button-active {
@@ -18,7 +26,7 @@
 
 .poster {
 	background-color: #EEE4DB;
-	margin-top: 79px;
+	margin-top: 70px;
 	position: relative;
 }
 
@@ -30,7 +38,9 @@
 	background-color: #C29974;
 	text-transform: uppercase;
 	height: 39px;
-	padding: 11px 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .poster__item {
@@ -44,6 +54,7 @@
 	justify-content: space-between;
 	margin: 89px 0 89px 0;
 	padding: 0;
+	padding-left: 1px;
 }
 
 .poster-pic {
@@ -59,8 +70,8 @@
 	line-height: 110%;
 	color: #1E0606;
 	margin: 0;
-	width: 307px;
-	padding-bottom: 20px;
+	width: 310px;
+	padding: 2px 0 19px 0;
 }
 
 .poster-text {
@@ -70,7 +81,8 @@
   line-height: 25px;
 	color: #1E0606;
 	width: 152px;
-	padding-bottom: 20px;
+	padding-bottom: 19px;
+	padding-left: 1px;
 }
 
 .poster-button {
@@ -91,8 +103,9 @@
   font-weight: 300;
   font-size: 60px;
 	color: rgba(30, 6, 6, 0.05);
-
+	padding-bottom: 4px;
 }
+
 
 /*products*/
 
@@ -103,12 +116,22 @@
 	line-height: 46px;
 	text-transform: uppercase;
 	color: #1E0606;
-	margin: 90px 30px 0 0;
+	margin: 91px 30px 0 0;
+}
+
+a:hover > .product-title {
+	text-decoration: underline;
+}
+a:active > .product-title {
+	text-decoration: underline;
 }
 
 .products-list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	margin-top: 30px;
 }
 
 .product {
@@ -118,22 +141,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-}
-
-.product1{
-	background-color: #DBE4DB;
-}
-
-.product2{
-	background-color:rgba(186, 142, 107, 0.3);
-}
-
-.product3{
-	background-color: #F8F2DA;
-}
-
-.product4{
-	background-color: rgba(9, 3, 79, 0.17);
+	margin-bottom: 20px;
 }
 
 .product-title {
@@ -148,7 +156,7 @@
 	top:50%;
   left:50%;
 	transform:translate(-50%, -50%);
-	text-align: center
+	text-align: center;
 }
 
 .product-img {
@@ -166,6 +174,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
+	
 }
 
 .about-products-title {
@@ -176,7 +185,7 @@
   text-transform: uppercase;
 	color: #1E0606;
 	margin-top: 30px;
-	margin-bottom: 17px;
+	margin-bottom: 20px;
 }
 
 .about-item {
@@ -185,62 +194,81 @@
 	font-size: 26px;
 	line-height: 32px;
 	color: #1E0606;
-	margin-bottom: 22px;
+	margin-bottom: 23px;
 }
 
-.about-item-selected {
-	font-family: 'Crimson Text', serif;
-	font-style: italic;
+.about-item-link:hover:before {
+	content: '';
+	position: absolute;
+	margin-top: -11px;
+	left: -60px;
+	width: 326px;
+  height: 55px;
+	background-color: rgba(112, 187, 220, 0.2);
+	pointer-events: none;
+}
+
+.about-item-link-active {
+	padding: 14px 180px 15px 60px;
+	margin-left: -60px;
 	font-weight: bold;
-	font-size: 26px;
-	line-height: 32px;
-	color: #1E0606;
 	background-color: rgba(112, 187, 220, 0.2);
 }
 
+.about-item-link:hover {
+	font-weight: bold;
+}
+
 .about-info {
-	margin-top: 8px;
-	margin-bottom: 35px;
+	margin-top: 29px;
+	margin-bottom: 34px;
 }
 
 .about-products-box {
 	width: 480px;
 	margin-right: 100px;
+	position: relative;
 }
 
 .about-products-pic {
-  padding-bottom: 90px;
+	padding-bottom: 75px;
+	padding-right: 20px;
 }
 
 /*partners*/
 
-.hidden {
-	position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important; 
-  width: 1px !important; 
-  overflow: hidden;
-}
-
 .partners-list {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .partners {
-	padding-bottom: 90px;
+	padding-bottom: 97px;
+}
+
+.partners-item:hover {
+	opacity: 0.75;
 }
 
 /*about-us, map*/
 
-.about-us, .map {
-	width: 483px;
-	margin-left: 30px;
-	
+.map {
+	background-color: #E1F0F7;
+	max-width: 543px;
+	margin-right: 37px;
+	margin-bottom: 77px;
+	padding: 0 30px 0 30px;
 }
+
+.about-us {
+	background-color: #E1F0F7;
+	max-width: 543px;
+	padding: 0 30px 44px 30px;
+	margin-bottom: 50px;
+}
+
 
 .about-us-title, .contacts {
 	font-family: 'Montserrat', sans-serif;
@@ -250,7 +278,7 @@
   text-transform: uppercase;
 	color: #1E0606;
 	margin: -26px 0 0 0;
-	padding-bottom: 10px;
+	padding-bottom: 11px;
 }
 
 .contacts {
@@ -268,7 +296,7 @@
 
 .about-us-info {
 	margin: 0;
-	padding-bottom: 29px;
+	padding-bottom: 30px;
 	padding-top: 10px;
 }
 
@@ -277,32 +305,25 @@
 	padding-bottom: 20px;
 }
 
+.map-pic {
+	margin-bottom: -180px;
+}
+
 .about-us-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-bottom: 147px;
-}
-
-.about-us-box {
-	background-color: #E1F0F7;
-	width: 543px;
-}
-
-.about-us-box1 {
-	height: 236px;
-}
-
-.about-us-box2 {
-	height: 209px;
+	margin-bottom: 97px;
 }
 
 /* slider */
 
 .slider-text-button {
-	width: 37px;
-	height: 37px;
+	max-width: 37px;
+	width: 100%;
 	padding: 0;
 	margin-right: 6px;
+	margin-bottom: 6px;
 	padding-top: 3px;
 	border: none;
 }
@@ -310,17 +331,20 @@
 .slider-text {
 	width: 580px;
 	margin-left: 14px;
+	margin-top: 11px;
 }
 
 .slider-category {
 	display: flex;
 	flex-direction: row;
-	padding-bottom: 90px;
+	padding-bottom: 74px;
 	justify-content: start;
 	align-items: center;
+	padding-left: 0;
 }
 
 /*modal window*/
+
 
 .modal-window {
 	font-family: 'Roboto', sans-serif;
@@ -329,9 +353,56 @@
   line-height: 16px;
 	color: #1E0606;
 	background-color: #E5EAF8;
+	padding: 22px 40px 42px 40px;
+	margin: auto;
+	position: relative;
 }
 
 .button-gray {
 	background: #C1C1C1;
+	border: none;
+	display: flex;
+	margin-top: 20px;
 }
 
+.form-checkbox:checked + .form-checkbox-indicator {
+  background: url(/images/Check.svg) no-repeat; 
+}
+
+.form-checkbox-indicator {
+	height: 20px;
+	width: 20px;
+	border: 2px solid #C29974;
+	border-radius: 3px;
+	margin-right: 15px;
+}
+
+.checkbox-label {
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	cursor: pointer;
+}
+
+.modal-bg {
+	position: fixed;
+	background-color: rgba(125, 151, 218, 0.8);
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+
+.modal-bg_close {
+  display: none;
+}
+
+.modal-close {
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	padding: 0;
+	cursor: pointer;
+}
