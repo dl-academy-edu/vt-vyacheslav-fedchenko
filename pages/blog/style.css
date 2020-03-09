@@ -35,10 +35,10 @@
   margin-bottom: 15px;
 }
 
-.blog-link:hover {
+.blog-link > .blog-title:hover {
 	text-decoration: underline;
 }
-.blog-link:active {
+.blog-link > .blog-title:active {
 	text-decoration: underline;
 }
 
