@@ -2,13 +2,13 @@
 
 
 .slider-button {
-	background-color: #D6CAC2;
+	margin-left: 3px;
 	margin-top: 11px;
-	border: none;
 	width: 31px;
 	height: 3px;
+	background-color: #D6CAC2;
+	border: none;
 	cursor: pointer;
-	margin-left: 3px;
 }
 
 .slider-button:hover {
@@ -17,35 +17,36 @@
 }
 
 .slider-button-active {
-	background-color: rgba(30, 6, 6, 0.6);
 	margin-top: 10px;
-	border: none;
 	width: 31px;
 	height: 3px;
+	background-color: rgba(30, 6, 6, 0.6);
+	border: none;
 }
 
 .poster {
-	background-color: #EEE4DB;
-	margin-top: 70px;
 	position: relative;
+	margin-top: 70px;
+	background-color: #EEE4DB;
 }
 
 .poster-footer {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  color: #FFFFFF;
-	background-color: #C29974;
-	text-transform: uppercase;
-	height: 39px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 39px;
+  font-weight: bold;
+  font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+  color: #FFFFFF;
+	background-color: #C29974;
 }
 
 .poster__item {
-	margin: 0 0 0 131px;
 	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 131px;
 }
 
 .poster__content {
@@ -64,25 +65,25 @@
 }
 
 .poster-title {
-	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	width: 310px;
+	padding: 2px 0 19px 0;
+	font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: bold;
   font-size: 40px;
 	line-height: 110%;
 	color: #1E0606;
-	margin: 0;
-	width: 310px;
-	padding: 2px 0 19px 0;
 }
 
 .poster-text {
-	font-family: 'Crimson Text', serif;
+	width: 152px;
+	padding-bottom: 19px;
+	padding-left: 1px;
+	font-family: 'Crimson Text', 'Big Caslon', serif;
 	font-style: italic;
 	font-size: 20px;
   line-height: 25px;
 	color: #1E0606;
-	width: 152px;
-	padding-bottom: 19px;
-	padding-left: 1px;
 }
 
 .poster-button {
@@ -99,24 +100,24 @@
 }
 
 .slider-number {
-	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 4px;
+	font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: 300;
   font-size: 60px;
 	color: rgba(30, 6, 6, 0.05);
-	padding-bottom: 4px;
 }
 
 
 /*products*/
 
 .products-title {
-	font-family: 'Montserrat', sans-serif;
+	margin: 91px 30px 0 0;
+	font-family: 'Montserrat', 'Candara', sans-serif;
 	font-weight: bold;
 	font-size: 38px;
 	line-height: 46px;
 	text-transform: uppercase;
 	color: #1E0606;
-	margin: 91px 30px 0 0;
 }
 
 a:hover > .product-title {
@@ -127,36 +128,36 @@ a:active > .product-title {
 }
 
 .products-list {
+	margin-bottom: 0;
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 0;
-	margin-top: 30px;
 }
 
 .product {
-	width: 280px;
-	height: 270px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	width: 280px;
+	height: 270px;
 	margin-bottom: 20px;
 }
 
 .product-title {
-	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	top:50%;
+  left:50%;
+	transform:translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
   color: #FFFFFF;
 	text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-	position: absolute;
-	top:50%;
-  left:50%;
-	transform:translate(-50%, -50%);
-	text-align: center;
 }
 
 .product-img {
@@ -178,23 +179,23 @@ a:active > .product-title {
 }
 
 .about-products-title {
-	font-family: 'Montserrat', sans-serif;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
 	color: #1E0606;
-	margin-top: 30px;
-	margin-bottom: 20px;
 }
 
 .about-item {
-	font-family: 'Crimson Text', serif;
+	margin-bottom: 23px;
+	font-family: 'Crimson Text', 'Big Caslon', serif;
 	font-style: italic;
 	font-size: 26px;
 	line-height: 32px;
 	color: #1E0606;
-	margin-bottom: 23px;
 }
 
 .about-item-link:hover:before {
@@ -225,14 +226,14 @@ a:active > .product-title {
 }
 
 .about-products-box {
+	position: relative;
 	width: 480px;
 	margin-right: 100px;
-	position: relative;
 }
 
 .about-products-pic {
-	padding-bottom: 75px;
-	padding-right: 20px;
+	margin-bottom: 74px;
+	margin-right: 70px;
 }
 
 /*partners*/
@@ -255,30 +256,30 @@ a:active > .product-title {
 /*about-us, map*/
 
 .map {
-	background-color: #E1F0F7;
 	max-width: 543px;
 	margin-right: 37px;
 	margin-bottom: 77px;
 	padding: 0 30px 0 30px;
+	background-color: #E1F0F7;
 }
 
 .about-us {
-	background-color: #E1F0F7;
 	max-width: 543px;
 	padding: 0 30px 44px 30px;
-	margin-bottom: 50px;
+	margin-bottom: 37px;
+	background-color: #E1F0F7;
 }
 
 
 .about-us-title, .contacts {
-	font-family: 'Montserrat', sans-serif;
+	margin: -26px 0 0 0;
+	padding-bottom: 11px;
+	font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
 	color: #1E0606;
-	margin: -26px 0 0 0;
-	padding-bottom: 11px;
 }
 
 .contacts {
@@ -286,7 +287,7 @@ a:active > .product-title {
 }
 
 .about-us-subtitle {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Crimson Text', 'Big Caslon', serif;
   font-style: italic;
   font-weight: normal;
   font-size: 26px;
@@ -305,15 +306,20 @@ a:active > .product-title {
 	padding-bottom: 20px;
 }
 
-.map-pic {
+.map-box {
 	margin-bottom: -180px;
 }
 
+.map-area {
+	width: 483px; 
+	height: 196px;
+}
+
 .about-us-list {
+	margin-bottom: 110px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 97px;
 }
 
 /* slider */
@@ -347,37 +353,55 @@ a:active > .product-title {
 
 
 .modal-window {
-	font-family: 'Roboto', sans-serif;
+	position: relative;
+	padding: 22px 40px 42px 40px;
+	margin: auto;
+	font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 	color: #1E0606;
 	background-color: #E5EAF8;
-	padding: 22px 40px 42px 40px;
-	margin: auto;
-	position: relative;
 }
 
 .button-gray {
+	display: flex;
+	margin-top: 21px;
 	background: #C1C1C1;
 	border: none;
-	display: flex;
-	margin-top: 20px;
 }
 
-.form-checkbox:checked + .form-checkbox-indicator {
-  background: url(/images/Check.svg) no-repeat; 
+input:focus + .form-checkbox-indicator {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.form-checkbox:checked + .form-checkbox-indicator:after {
+  background: url(/img/Check.svg) no-repeat; 
 }
 
 .form-checkbox-indicator {
-	height: 20px;
+	margin-right: 15px;
+	padding-left: 34px;
+	padding-top: 2px;
+}
+
+.form-checkbox-indicator:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+  height: 20px;
 	width: 20px;
 	border: 2px solid #C29974;
 	border-radius: 3px;
-	margin-right: 15px;
+	margin-top: 19px;
 }
 
 .checkbox-label {
+	position: relative;
 	display: flex;
 	align-items: center;
 	padding-top: 20px;
@@ -385,12 +409,12 @@ a:active > .product-title {
 }
 
 .modal-bg {
+	display: flex;
 	position: fixed;
 	background-color: rgba(125, 151, 218, 0.8);
 	top: 0;
 	height: 100vh;
 	width: 100vw;
-	display: flex;
 }
 
 .modal-bg_close {
@@ -398,11 +422,19 @@ a:active > .product-title {
 }
 
 .modal-close {
-	border: none;
-	background-color: transparent;
 	position: absolute;
 	top: 0;
 	right: -25px;
 	padding: 0;
+	border: none;
+	background-color: transparent;
 	cursor: pointer;
+}
+
+.modal-close:hover {
+	opacity: .5;
+}
+
+.modal-close:active {
+	opacity: .3;
 }

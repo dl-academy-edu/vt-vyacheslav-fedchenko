@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>Design Life Kids</title>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i|Montserrat:400,700|Open+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i%7CMontserrat:400,700%7COpen+Sans:400,700%7CRoboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/common.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body>
     <header class="header container">
-      <a href="#"><img class="header-logo" src="/images/logo.svg" alt="logo"/></a>
+      <a href="#"><img class="header-logo" src="/img/logo.svg" width="110" height="60" alt="logo"/></a>
       <nav class="header-nav">
         <ul class="header-list-links list-point-none">
           <li><a class="header-nav_item header_active" href="/pages/blog/index.html">Blog</a></li>
@@ -19,7 +19,7 @@
         </ul>
         <ul class="header-list-contacts list-point-none">
           <li>
-            <a class="search-link header_active" href="#"><img src="/images/search.svg" alt="search"/></a>
+            <a class="search-link header_active" href="#"><img src="/img/search.svg" width="19" height="19" alt="search"/></a>
           </li>
           <li><a class="header-contact header_active" href="/pages/contact-us/index.html">Contact Us</a></li>
         </ul>
@@ -30,18 +30,18 @@
         <section class="poster">
           <div class="slider">
             <span class="slider-number">01</span>
-            <button class="slider-button slider-button-active"></button>
-            <button class="slider-button"></button>
-            <button class="slider-button"></button>
-            <button class="slider-button"></button>
+            <button aria-label="slider-button" class="slider-button slider-button-active"></button>
+            <button aria-label="slider-button" class="slider-button"></button>
+            <button aria-label="slider-button" class="slider-button"></button>
+            <button aria-label="slider-button" class="slider-button"></button>
           </div>
           <div class="poster__item">
             <div class="poster__content">
               <h2 class="poster-title">THE OOH NOO COLLECTION</h2>
               <span class="poster-text">Designed in Slovenia</span>
-              <a class="poster-button poster-button_js button button-brown" href="#">EXPLORE NOW</a>
+              <button class="poster-button poster-button_js button button-brown">EXPLORE NOW</button>
             </div>
-            <img class="poster-pic" src="/images/poster.png" alt="poster"/>
+            <img class="poster-pic" src="/img/poster.png" width="635" height="460" alt="poster"/>
           </div>
           <div class="poster-footer">
             Free (continental) USA shipping on all orders of $100 USD or more!
@@ -53,36 +53,36 @@
         <ul class="products-list list-point-none">
           <li class="product">
             <a href="#">
-              <img src="/images/product-1.jpg" alt="APPAREL KIDS" class="product-img"/>
+              <img src="/img/product-1.jpg" width="280" height=270 alt="APPAREL KIDS" class="product-img"/>
               <span class="product-title">APPAREL KIDS</span>
             </a>
           </li>
           <li class="product">
             <a href="#">
-              <img src="/images/product-2.jpg" alt="HOLIDAY SHOP" class="product-img"/>
+              <img src="/img/product-2.jpg" width="280" height=270 alt="HOLIDAY SHOP" class="product-img"/>
               <span class="product-title">HOLIDAY SHOP</span>
             </a>
           </li>
           <li class="product">
             <a href="/pages/toys/index.html">
-              <img src="/images/product-3.jpg" alt="TOYS" class="product-img"/>
+              <img src="/img/product-3.jpg" width="280" height=270 alt="TOYS" class="product-img"/>
               <span class="product-title">TOYS</span>
             </a>
           </li>
           <li class="product">
             <a href="#">
-              <img src="/images/product-4.jpg" alt="ACCESSORIES" class="product-img"/>
+              <img src="/img/product-4.jpg" width="280" height="270" alt="ACCESSORIES" class="product-img"/>
               <span class="product-title">ACCESSORIES</span>
             </a>
           </li>
         </ul>
         <div class="slider-category container">
-            <button class="slider-text-button button button-blue">
+            <button aria-label="slider-back-button" class="slider-text-button button button-blue">
               <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"/>
               </svg>
               </button>
-            <button class="slider-text-button button button-blue">
+            <button aria-label="slider-forward-button" class="slider-text-button button button-blue">
               <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"/>
               </svg>
@@ -94,9 +94,7 @@
         </div>
       </section>
       <section class="about-products container">
-        <div class="about-products-pic">
-          <img src="/images/Delivery.jpg" alt="Delivery" class="product-img"/>
-        </div>
+          <img src="/img/Delivery.jpg" width="480" height="559" alt="Delivery" class="about-products-pic"/>
         <div class="about-products-box">
           <h2 class="about-products-title">Delivery</h2>
             <ul class="about-list list-point-none">
@@ -117,23 +115,23 @@
               work with to thank!
             </p>
           </div>
-          <a class="about-products-button button button-brown" href="#">LEARN MORE</a>
+          <a href="#" class="about-products-button button button-brown">LEARN MORE</a>
         </div>
       </section>
       <section class="partners container">
         <h2 class="hidden">Partners</h2>
         <ul class="partners-list list-point-none">
           <li>
-            <a href="#" class="partners-item"><img src="/images/partner-1.png" alt="Mail-ru group" /></a>
+            <a href="#" class="partners-item"><img src="/img/partner-1.png" width="193" height=60 alt="Mail-ru group" /></a>
           </li>
           <li>
-            <a href="#" class="partners-item"><img src="/images/partner-2.png" alt="Apple" /></a>
+            <a href="#" class="partners-item"><img src="/img/partner-2.png" width="179" height="61" alt="Apple" /></a>
           </li>
           <li>
-            <a href="#" class="partners-item"><img src="/images/partner-3.png" alt="Eltex" /></a>
+            <a href="#" class="partners-item"><img src="/img/partner-3.png" width="216" height=46 alt="Eltex" /></a>
           </li>
           <li>
-            <a href="#" class="partners-item"><img src="/images/partner-4.png" alt="Owox" /></a>
+            <a href="#" class="partners-item"><img src="/img/partner-4.png" width="211" height="40" alt="Owox" /></a>
           </li>
         </ul>
       </section>
@@ -146,7 +144,7 @@
             there are other days that i am completely shocked that four years have
             flown by. It's simply magical.
             </p>
-          <a class="about-us-button button button-brown" href="#">buy now</a>
+          <a href="/pages/catalog/index.html" class="about-us-button button button-brown">buy now</a>
         </section>
         <article class="map">
           <h2 class="contacts">Contacts</h2>
@@ -155,7 +153,11 @@
             there are other days that i am completely shocked that four years have
             flown by. It's simply magical.
           </p>
-          <img class="map-pic" src="/images/map.jpg" alt="map">
+          <div class="map-box">
+            <a class="map-link" href="https://yandex.ru/maps/240/togliatti/?utm_medium=mapframe&utm_source=maps"></a>
+            <a class="map-link" href="https://yandex.ru/maps/240/togliatti/?clid=2063711&ll=49.294836%2C53.513781&utm_medium=mapframe&utm_source=maps&z=14.32"></a>
+            <iframe class="map-area" src="https://yandex.ru/map-widget/v1/-/CKe2aQ0e"></iframe>
+          </div>
         </article>
       </div>
     </main>
@@ -165,7 +167,7 @@
           <h4 class="footer__title">Navigation</h4>
           <ul class="footer-nav-list list-point-none">
             <li class="footer-nav-item"><a class="footer-item" href="#">About Us</a></li>
-            <li class="footer-nav-item"><a class="footer-item" href="/pages/blog/">Blog</a></li>
+            <li class="footer-nav-item"><a class="footer-item" href="/pages/blog/index.html">Blog</a></li>
             <li class="footer-nav-item"><a class="footer-item" href="#">Design Services</a></li>
             <li class="footer-nav-item"><a class="footer-item" href="#">Featured On</a></li>
             <li class="footer-nav-item"><a class="footer-item" href="#">2018 Holiday Catalog</a></li>
@@ -175,7 +177,7 @@
         <section class="footer-customer-info">
           <h4 class="footer__title">Customer Information</h4>
           <ul class="footer-customer-info-list list-point-none">
-            <li class="customer-info-item"><a class="footer-item" href="/pages/contact-us/">Contact Us</a></li>
+            <li class="customer-info-item"><a class="footer-item" href="/pages/contact-us/index.html">Contact Us</a></li>
             <li class="customer-info-item"><a class="footer-item" href="#">Sale Exclusions</a></li>
             <li class="customer-info-item"><a class="footer-item" href="#">Shipping & Returns</a></li>
             <li class="customer-info-item"><a class="footer-item" href="#">Terms & Conditions</a></li>
@@ -186,8 +188,9 @@
         <section class="footer-connect">
           <h4 class="footer__title">Connect</h4>
           <form action="#">
-          <input type="email" class="footer-connect-form" value="Email"/>
-          <button class="button button-connect" type="submit">Join</button>
+            <label class="form-label" for="form-email">Email</label>
+            <input type="email" class="footer-connect-form" id="form-email" value="Email"/>
+            <button class="button button-connect" type="submit">Join</button>
           </form>
           <ul class="social-list list-point-none">
             <li class="social-item">
@@ -230,15 +233,35 @@
           <h2 class="hidden">Footer-info</h2>
                 <div class="rating-area">
                   <input type="radio" id="star-5" name="rating">
-                  <label for="star-5" title="rating «5»"></label>	
+                  <label for="star-5" title="rating «5»">
+                    <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                  </label>	
                   <input type="radio" id="star-4" name="rating">
-                  <label for="star-4" title="rating «4»"></label>    
+                  <label for="star-4" title="rating «4»">
+                    <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                  </label>    
                   <input type="radio" id="star-3" name="rating">
-                  <label for="star-3" title="rating «3»"></label>  
+                  <label for="star-3" title="rating «3»">
+                    <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                  </label>  
                   <input type="radio" id="star-2" name="rating">
-                  <label for="star-2" title="rating «2»"></label> 
+                  <label for="star-2" title="rating «2»">
+                    <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                  </label> 
                   <input type="radio" id="star-1" name="rating">
-                  <label for="star-1" title="rating «1»"></label>
+                  <label for="star-1" title="rating «1»">
+                    <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                  </label>
                   <p class="rating-text">Company Rating</p>
                 </div>
               <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
@@ -258,8 +281,8 @@
             <input class="form-input" id="form-phone" type="text" name="phone">
           </div>
           <div class="form-row-short">
-            <label class="form-label" for="form-email">Email</label>
-            <input class="form-input" id="form-email" type="email" name="email">
+            <label class="form-label" for="form-email-modal">Email</label>
+            <input class="form-input" id="form-email-modal" type="email" name="email">
           </div>
         </div>
         <div class="form-row">
@@ -268,17 +291,16 @@
         </div>
         <label class="checkbox-label">
           <input class="form-checkbox hidden" type="checkbox" value="accept" name="accept-button">
-          <span class="form-checkbox-indicator"></span>
-          By clicking on the button, you consent to the processing of your personal data
+          <span class="form-checkbox-indicator">By clicking on the button, you consent to the processing of your personal data</span>
         </label>
         <button type="submit" class="button button-gray">SUBMIT</button>
         <button type="button" class="modal-close modal-close_js">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
           <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
           </svg>
         </button>
       </form>
     </div>
-    <script src="/script.js"></script>
+    <script src="/js/script.min.js"></script>
   </body>
 </html>

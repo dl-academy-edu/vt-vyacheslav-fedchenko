@@ -10,6 +10,13 @@
 
 /*range*/
 
+.slider:focus {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
 .slidecontainer {
   width: 100%;
 }
@@ -18,15 +25,14 @@
   -webkit-appearance: none;
   width: 188px;
   height: 4px;
-  background-color: #000000;
+  background-color: #666666;
   outline: none;
-  opacity: 0.5;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
 }
 
 .slider:hover {
-  opacity: 1;
+  -webkit-transition: .2s;
+  opacity: .9;
+  transition: opacity .2s;
 }
 
 .slider::-webkit-slider-thumb {
@@ -35,22 +41,14 @@
   width: 24px;
   height: 24px;
   border: 0;
-  background: url(/images/Range.svg);
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  border: 0;
-  background: url(/images/Range.svg);
+  background: url(/img/Range.svg);
   cursor: pointer;
 }
 
 .range-cost {
-  margin: 16px -11px 0 -5px;
   display: flex;
   justify-content: space-between;
+  margin: 16px -11px 0 -5px;
 }
 
 .filter-field{
@@ -59,21 +57,22 @@
 
 .filter-legend {
   font-weight: bold;
-  padding-bottom: 12px;
+  padding-top: 1px;
+  padding-bottom: 10px;
 }
 
 .fieldset-color {
   display: flex;
-  padding-left: 45px;
+  padding-left: 58px;
 }
 
 .fieldset-delivery {
   display: flex;
-  padding-left: 62px;
+  padding-left: 66px;
 }
 
 .fieldset-amount {
-  padding-left: 6px;
+  padding-right: 25px;
 }
 
 fieldset {
@@ -82,23 +81,32 @@ fieldset {
 
 /*checkbox*/
 
-.form-checkbox:checked + .form-checkbox-indicator {
-  background: url(/images/Check.svg) no-repeat; 
+.form-checkbox:checked + .form-checkbox-indicator:after {
+  background: url(/img/Check.svg) no-repeat; 
   background-color: #FFFFFF;
 }
 
 .form-checkbox-indicator {
-	height: 19px;
-	width: 19px;
-	border: 2px solid #C29974;
+	padding-left: 30px;
+  margin-right: 8px;
+}
+
+.form-checkbox-indicator:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 19px;
+  width: 19px;
+  border: 2px solid #C29974;
 	border-radius: 3px;
-	margin-right: 8px;
 }
 
 .checkbox-label {
+  position: relative;
 	display: flex;
 	align-items: center;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   cursor: pointer;
 }
 
@@ -106,12 +114,27 @@ fieldset {
   text-decoration: underline;
   }
 
+input:focus + .form-checkbox-indicator {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.form-checkbox:disabled + .form-checkbox-indicator:after {
+  border: 2px solid #E1CDBA;
+}
+
+.form-checkbox:disabled + .form-checkbox-indicator:after {
+  background: url(/img/Check_disabled.svg) no-repeat; 
+}
+
 /*radio*/
 
 .radio-label {
 	display: flex;
 	align-items: center;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   cursor: pointer;
 }
 
@@ -120,20 +143,28 @@ text-decoration: underline;
 }
 
 .form-radio-indicator {
+  position: relative;
+  padding-left: 30px;
+  margin-right: 10px;
+}
+
+.form-radio-indicator:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
   display: block;
   height: 20px;
 	width: 20px;
 	border: 2px solid #C29974;
 	border-radius: 100%;
-  margin-right: 10px;
-  position: relative;
 }
 
 .form-radio:checked + .form-radio-indicator:before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10px;
+  left: 10px;
   transform: translate(-50%, -50%);
   height: 12px;
   width: 12px;
@@ -141,23 +172,36 @@ text-decoration: underline;
   background-color: #C29974;
 }
 
-.fieldset-button {
-  margin-top: 36px;
-  border: none;
+input:focus + .form-radio-indicator {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
+.form-radio:disabled + .form-radio-indicator:before {
+  background-color: #E1CDBA;
+}
+
+.form-radio:disabled + .form-radio-indicator:after {
+  border: 2px solid #E1CDBA;
+}
+
+/*radio-box*/
+
 .radio-box-label {
+  position: relative;
   cursor: pointer;
 }
 
 .form-radio-box-indicator {
   display: block;
   height: 35px;
-	width: 80px;
-	border: none;
-  background-color: #FFFFFF;
+  width: 80px;
   padding-top: 9px;
   text-align: center;
+  background-color: #FFFFFF;
+  border: none;
 }
 
 .form-radio-box:checked + .form-radio-box-indicator {
@@ -168,29 +212,43 @@ text-decoration: underline;
   background-color: #EDDEEB;
 }
 
+input:focus + .form-radio-box-indicator {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
 .radio-box-container {
   display: flex;
+}
+
+/*filter-button*/
+
+.fieldset-button {
+  margin-top: 36px;
+  border: none;
 }
 
 /*toy list*/
 
 .products {
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
-  margin-top: 0;
 }
 
 .toy {
-  margin-top: 60px;
-  margin-bottom: 33px;
+  margin-top: 57px;
+  margin-bottom: 34px;
 }
 
 .products {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', 'Candara', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
@@ -213,34 +271,26 @@ text-decoration: underline;
 }
 
 .toy-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 27px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
-  display: flex;
-  justify-content: center;
-  padding-top: 27px;
 }
 
 .toy-cost {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
 	font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
-  display: flex;
-  justify-content: center;
-  padding-top: 16px;
 }
 
 .toy-select:hover:before {
-  content: 'LEARN MORE';
-  color: #1E0606;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 29px;
-  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,41 +299,18 @@ text-decoration: underline;
 	left: 87px;
 	width: 207px;
   height: 207px;
+  content: 'LEARN MORE';
+  color: #1E0606;
+  font-family: 'Montserrat', 'Candara', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
   background-color: #E5EAF8;
   opacity: .9;
 }
 
 .toy-select:active:before {
   opacity: .67;
-}
-
-/*selector*/
-
-.selector {
-	font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #1E0606;
-  margin-bottom: 48px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.selector-pages {
-  display: flex;
-}
-
-.selector-item {
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.selector-item-active {
-  color: #C29974;
-}
-
-.selector-item:hover {
-  opacity: .75;
 }
